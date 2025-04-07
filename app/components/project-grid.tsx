@@ -26,7 +26,7 @@ const projects: Project[] = [
     imageUrl: "/portfolio.webp?v=" + Date.now(),
     technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
     githubUrl: "https://github.com/Doolitt/portfolio-royal",
-    liveUrl: "https://yourportfolio.com",
+    liveUrl: "https://portfolio-royal.vercel.app/",
   },
   // Add more projects here
 ];
