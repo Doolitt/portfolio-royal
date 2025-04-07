@@ -1,14 +1,12 @@
 "use client"
 
 import Link from "next/link"
-import { useTheme } from "@/app/theme-provider"
-import { Moon, Sun, Menu } from "lucide-react"
+import { Menu } from "lucide-react"
 import { useState } from "react"
+import { ThemeToggle } from "./theme-toggle"
 
 // Header component with navigation and theme toggle
 export const Header = () => {
-  // Get theme context
-  const { theme, setTheme } = useTheme()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   return (
@@ -39,32 +37,12 @@ export const Header = () => {
           >
             Contact
           </Link>
-          <button
-            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-            className="rounded-md p-2 hover:bg-[#D8D4D5] dark:hover:bg-[#384D48]"
-            aria-label="Toggle theme"
-          >
-            {theme === "light" ? (
-              <Moon className="h-5 w-5 text-zinc-700" />
-            ) : (
-              <Sun className="h-5 w-5 text-zinc-300" />
-            )}
-          </button>
+          <ThemeToggle />
         </nav>
 
         {/* Mobile Navigation Controls */}
         <div className="flex md:hidden items-center space-x-4">
-          <button
-            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-            className="rounded-md p-2 hover:bg-[#D8D4D5] dark:hover:bg-[#384D48]"
-            aria-label="Toggle theme"
-          >
-            {theme === "light" ? (
-              <Moon className="h-5 w-5 text-zinc-700" />
-            ) : (
-              <Sun className="h-5 w-5 text-zinc-300" />
-            )}
-          </button>
+          <ThemeToggle />
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="rounded-md p-2 hover:bg-[#D8D4D5] dark:hover:bg-[#384D48]"

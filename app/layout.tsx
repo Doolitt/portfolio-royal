@@ -18,14 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} bg-[#E2E2E2] dark:bg-[#2D2D2D]`}>
+      <body className={`${inter.className} bg-[#E2E2E2] dark:bg-[#2D2D2D] h-screen overflow-hidden`}>
         <ThemeProvider
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
           <Header />
-          <main className="container mx-auto px-4 py-8">
+          <main className="container mx-auto px-4">
             {children}
           </main>
         </ThemeProvider>
