@@ -23,7 +23,7 @@ const projects: Project[] = [
     id: "1",
     title: "Portfolio Website",
     description: "A personal portfolio website built with Next.js and Tailwind CSS",
-    imageUrl: "/portfolio.webp",
+    imageUrl: "/portfolio.webp?v=" + Date.now(),
     technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
     githubUrl: "https://github.com/yourusername/portfolio",
     liveUrl: "https://yourportfolio.com",
@@ -60,6 +60,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                   src={project.imageUrl}
                   alt={project.title}
                   fill
+                  priority
                   className="object-cover"
                 />
               </div>
