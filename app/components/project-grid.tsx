@@ -25,7 +25,7 @@ const projects: Project[] = [
     description: "A personal portfolio website built with Next.js and Tailwind CSS",
     imageUrl: "/portfolio.webp?v=" + Date.now(),
     technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-    githubUrl: "https://github.com/yourusername/portfolio",
+    githubUrl: "https://github.com/Doolitt/portfolio-royal",
     liveUrl: "https://yourportfolio.com",
   },
   // Add more projects here
