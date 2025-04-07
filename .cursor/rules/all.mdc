@@ -29,7 +29,7 @@ This project is my personal portfolio to showcase my projects.
     - Primary Background: E2E2E2 (platinum)
     - Accent Colors: Gradients from 384d48 to acad94
     - Text Colors: zinc-700 for light mode, zinc-300 for dark mode
-    - Dark Mode: 6e7271 (dim gray) background with d8d4d5 (timberwolf) / e2e2e2 (platinum) accents
+    - Dark Mode: #2D2D2D background with d8d4d5 (timberwolf) / e2e2e2 (platinum) accents
     - Interactive Elements: d8d4d5 (timberwolf) hover states in light mode, 384d48 (dark slate gray) in dark mode
     - Borders: similar colors for subtle separation
 

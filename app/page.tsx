@@ -1,12 +1,10 @@
 "use client"
 
 import Link from 'next/link';
-import { ThemeToggle } from './components/theme-toggle';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#E2E2E2] dark:bg-[#2D2D2D] flex items-center justify-center">
-      <ThemeToggle />
       {/* Hero Section */}
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
